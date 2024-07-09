@@ -14,14 +14,6 @@ class Workplace extends StatefulWidget {
 }
 
 class _WorkplaceState extends State<Workplace> {
-  late Future<Getlandsbyuserid> futureLands;
-
-  @override
-  void initState() {
-    super.initState();
-    futureLands = LandService().fetchLand(widget.id!); // Initialize futureLands
-  }
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
